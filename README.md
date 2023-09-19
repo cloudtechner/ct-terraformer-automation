@@ -34,6 +34,7 @@ Note : Both Terraformer and a Terraform provider plugin need to be installed.
 
  
 •	**MacOS**
+
     export PROVIDER={all,google,aws,kubernetes}
     curl -LO "https://github.com/GoogleCloudPlatform/terraformer/releases/download/$(curl -s https://api.github.com/repos/GoogleCloudPlatform/terraformer/releases/latest | grep tag_name | cut -d '"' -f 4)/terraformer-${PROVIDER}-darwin-amd64"
     chmod +x terraformer-${PROVIDER}-darwin-amd64
@@ -41,6 +42,7 @@ Note : Both Terraformer and a Terraform provider plugin need to be installed.
 
 
 •	**Windows**
+
 1.	Install Terraform - https://www.terraform.io/downloads
 2.	Download exe file for required provider from here - https://github.com/GoogleCloudPlatform/terraformer/releases
 3.	Add the exe file path to path variable
@@ -48,7 +50,7 @@ Note : Both Terraformer and a Terraform provider plugin need to be installed.
 
 **Usage of Terraformer command :**
 
-   terraformer import aws --resources=vpc,subnet,security-group
+  terraformer import aws --resources=vpc,subnet,security-group
 
 **Usage of Terraformer Script :**
 
