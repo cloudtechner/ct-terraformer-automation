@@ -1,30 +1,34 @@
-#Terraformer- Write Back your Infrastructure to Code
+# Terraformer- Write Back your Infrastructure to Code
 
-**Overview**
+## Overview
+
 The Terraformer utility is a tool designed to simplify the process of generating Terraform configuration files from existing cloud resources. With Terraformer, you can easily import cloud resources into your Terraform projects, making it easier to manage your infrastructure as code.
 
-**Features**
+## Features
 1.	Import existing cloud resources into Terraform configuration files.
 2.	Supports multiple cloud providers, including AWS, Azure, Google Cloud, and more.
 3.	Generate Terraform code for various resource types, such as virtual machines, databases, and networking components.
 4.	Automate the creation of Terraform configurations based on existing cloud resources.
 
-**Prerequisites**
+## Prerequisites
 Before using Terraformer, ensure that you have the following prerequisites installed:
 
 1.	Support terraform 0.13 (for terraform 0.11 use v0.7.9).
 2.	Go (if building from source)
 
-**Installation**
+## Installation
+
 You can install Terraformer using one of the following methods:
 Note : Both Terraformer and a Terraform provider plugin need to be installed.
 
-**From Source :**
+### From Source :
+
 1. Run git clone <terraformer repo> && cd terraformer/
 2. Run go mod download
 3. Run go build -v for all providers OR build with one provider go run build/main.go {google,aws,azure,kubernetes,etc}
 
-**From Releases:**
+### From Releases:
+
 •	**Linux**
 
     export PROVIDER={all,google,aws,kubernetes}
@@ -48,11 +52,13 @@ Note : Both Terraformer and a Terraform provider plugin need to be installed.
 3.	Add the exe file path to path variable
 
 
-**Usage of Terraformer command :**
+#### Usage of Terraformer command :
+```
 
   terraformer import aws --resources=vpc,subnet,security-group
+```
 
-**Usage of Terraformer Script :**
+#### Usage of Terraformer Script :
 
 Once you are done with all the installation steps and pre requisites. Follow the below steps :
 1.	Open the terminal 
