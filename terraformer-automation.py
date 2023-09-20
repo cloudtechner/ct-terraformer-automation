@@ -5,20 +5,6 @@ import sys
 import logging
 import re
 logging.basicConfig(level=logging.INFO)
-print("Hello! Welcome to the AWS Configuration and Login tool!")
-
-# Prompt user for input
-aws_input = input("Would you like to configure your AWS account or login to SSO? (configure/login/notrequired): ")
-
-# Process user input for aws login
-if aws_input == "configure":
-    print("You have selected to configure your AWS account!")
-    subprocess.run("aws configure sso", shell=True)
-elif aws_input == "login":
-    print("You have selected to login to SSO!")
-    subprocess.run("aws sso login" ,shell=True)
-elif aws_input == "notrequired":
-    print("Please proceed with the next steps")
 
 try:
     print("Please enter the following inputs")

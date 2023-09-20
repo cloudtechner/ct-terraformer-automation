@@ -38,12 +38,12 @@ cleanup() {
 
 # Print help text and exit.
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-    echo "Usage: tfmv.sh [options]"
+    echo "Usage: tfstate-merge.sh [options]"
     echo
     echo "Examples:"
     echo
-    echo "  - ./tfmv.sh stack1-migrate-to stack2-migrate-from"
-    echo "  - ./tfmv.sh app data"
+    echo "  - ./tfstate-merge.sh stack1-migrate-to stack2-migrate-from"
+    echo "  - ./tfstate-merge.sh app data"
     exit 1
 fi
 echo "> START"
